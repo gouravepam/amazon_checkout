@@ -37,8 +37,8 @@ let product_data = [
 
 let product_section = document.getElementById("product_listing")
 for (let index in product_data) {
-    product_section.innerHTML += ` <div class="">
-                    <div class="flex w-full py-4 border-b-[1.5px] border-b-[#e1e0e1]">
+    product_section.innerHTML += ` <div class="border-b-[1.5px] border-b-[#e1e0e1]">
+                    <div class="flex w-full py-4 ">
                         <div class="w-[35%] sm:w-[30%] h-full flex justify-center items-center">
                             <img class="w-[135px] h-[135px] sm:w-[180px] sm:h-[180px]" src="${product_data[index].product_img}" alt="">
                         </div>
@@ -92,7 +92,26 @@ for (let index in product_data) {
 
                             </div>
                         </div>
-                    </div>
+                        </div>
+                        <div class="flex pl-3 lg:hidden flex-wrap mb-2">
+                                                            <div
+                                        class="flex w-[20%] sm:w-[10%] justify-around items-center border-2 rounded-3xl border-yellow-400 p-[2px]">
+                                        <svg class="hover:cursor-pointer" width="14" height="14" viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M 575 63C 609 63 638 91 638 125C 638 125 638 187 638 187C 638 187 849 187 849 187C 870 187 887 204 887 225C 887 245 870 262 849 262C 849 262 785 262 785 262C 785 262 738 854 738 854C 738 856 738 859 737 861C 733 878 725 896 711 911C 697 926 676 938 652 939C 652 939 651 939 651 939C 651 939 351 939 351 939C 351 939 350 939 350 939C 325 938 303 926 289 911C 275 895 267 877 264 857C 264 856 264 856 264 855C 264 855 215 263 215 263C 215 263 151 263 151 263C 130 263 113 246 113 225C 113 205 130 188 151 188C 151 188 363 188 363 188C 363 188 363 125 363 125C 363 125 362 125 362 125C 362 91 391 63 425 63C 425 63 575 63 575 63M 438 187C 438 187 563 187 563 187C 563 187 563 138 563 138C 563 138 438 138 438 138C 438 138 438 187 438 187M 291 263C 291 263 338 847 338 847C 339 851 342 857 344 860C 347 863 349 864 352 864C 352 864 650 864 650 864C 653 864 653 864 656 861C 658 858 661 852 664 844C 664 844 710 262 710 262C 710 262 291 263 291 263" />
+                                        </svg>
+                                        <span class="text-[14px] font-semibold">1</span>
+                                        <svg class="hover:cursor-pointer" width="16" height="16" viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M 538 150C 538 150 538 462 538 462C 538 462 850 462 850 462C 850 462 850 538 850 538C 850 538 538 538 538 538C 538 538 538 850 538 850C 538 850 462 850 462 850C 462 850 462 538 462 538C 462 538 150 538 150 538C 150 538 150 462 150 462C 150 462 462 462 462 462C 462 462 462 150 462 150C 462 150 538 150 538 150" />
+                                        </svg>
+                                    </div>
+                          <a href="#" ><span class="px-2 ml-2 border-x-[1px] border-x-[#e5e4e4] font-semibold text-[#2c85c6] text-[11px]">Delete</span></a>
+                                    <a href="#" ><span class="px-2 text-[#2c85c6] text-[11px]  font-semibold ">Save for later</span></a>
+                                    <a href="#" ><span class="px-2 border-x-[1px] border-x-[#e5e4e4] text-[#2c85c6]  font-semibold  text-[11px]">See more like this</span></a>
+                        </div>
                 </div>`
 }
 
